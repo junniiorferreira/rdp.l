@@ -2,6 +2,8 @@
 printf 'YT Channel - https://www.youtube.com/c/AKYTRC \n'
 printf "RDP installing... " >&2
 {
+sudo apt-get install xfce4-terminal
+sudo update-alternatives --config x-terminal-emulator
 sudo useradd -m ALOK
 sudo adduser ALOK sudo
 echo 'ALOK:1234' | sudo chpasswd

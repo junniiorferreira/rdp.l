@@ -11,7 +11,7 @@ sudo apt-get upgrade -y
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
-sudo DEBIAN_FRONTEND=readline apt install --assume-yes xfce4 xfce4-goodies
+sudo DEBIAN_FRONTEND=noninteractive apt install --assume-yes xfce4 xfce4-goodies
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo dpkg --install chrome-remote-desktop_current_amd64.deb
 sudo apt install --assume-yes --fix-broken

@@ -5,7 +5,7 @@ printf "RDP installing... " >&2
 sudo useradd -m KYRVIM
 sudo adduser KYRVIM sudo
 echo 'KYRVIM:33646797' | sudo chpasswd
-sed -i '/#!\/bin\/bash/' /etc/passwd
+sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
 sudo apt-get upgrade -y
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
